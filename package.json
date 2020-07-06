@@ -1,0 +1,32 @@
+{
+  "name": "slt-test-writer",
+  "version": "0.0.1",
+  "description": "slt-test-writer",
+  "main": "index.js",
+  "author": {
+    "name": "Ivan Kouznetsov"
+  },
+  "dependencies": {
+    "jsonpath": "^1.0.2",
+    "node-fetch": "^2.6.0",
+    "parse-curl": "^0.2.6",
+    "readline-sync": "^1.4.10",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/jsonpath": "^0.2.0",
+    "@types/node": "^14.0.14",
+    "@types/node-fetch": "^2.5.7",
+    "@types/readline-sync": "^1.4.3",
+    "jest": "^26.1.0",
+    "prettier": "2.0.5",
+    "ts-jest": "^26.1.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test-cov": "jest --coverage",
+    "prettierfix": "prettier --write .",
+    "test-writer": "echo starting... && npx -q ts-node index.ts"
+  }
+}
